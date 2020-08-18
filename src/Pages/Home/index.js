@@ -18,11 +18,11 @@ export default () => {
       </ul>
       <br />
       <br />
-      <p lang="en-gb">©2020</p>
-      <p lang="en-gb">
+      <p>©2020</p>
+      {/* <p lang="en-gb">
         —{" "}
         <a href="mailto:contact@dvlstudio.com">hello(at)lonnesjo(dot)com</a>
-      </p>
+      </p> */}
     </Page>
   );
 };

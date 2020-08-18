@@ -11,21 +11,18 @@ export default () => {
       <h3>— Events</h3>
       <ul>
         <li>
-          <a className="compass" href="/events/tangenze-botaniche">
+          <a className="compass" href="/">
             29/8 - 20/9 Galleri 70
           </a>
         </li>
       </ul>
       <br />
       <br />
-      {/* <p lang="en-gb">
-        Norma is a trade­mark of Libre S.C. <br />
-        VAT IT09733080015 <br />
-        We're in Torino, Via Beau­mont 19.
-      </p>
+      <p lang="en-gb">©2020</p>
       <p lang="en-gb">
-        — <a href="mailto:contact@dvlstudio.com">hello(at)dvlstudio(dot)rocks</a>
-      </p> */}
+        —{" "}
+        <a href="mailto:contact@dvlstudio.com">hello(at)dvlstudio(dot)rocks</a>
+      </p>
     </Page>
   );
 };

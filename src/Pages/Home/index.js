@@ -1,6 +1,8 @@
 import React from "react";
 import Page from "../../Components/Page";
 
+const events = [{id: "23TplPdS", name : "Galleri 70"}];
+
 export default () => {
   return (
     <Page>
@@ -12,7 +14,7 @@ export default () => {
       <ul>
         <li>
           <a className="compass" href="/">
-            29/8 - 20/9 Galleri 70
+            Galleri 70
           </a>
         </li>
       </ul>

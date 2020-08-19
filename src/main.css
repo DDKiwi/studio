@@ -1182,7 +1182,7 @@ img {
   background-color: #000;
 }
 @media (prefers-color-scheme: dark) {
-  #main,
+  #root,
   html {
     background-color: #1e1e1e;
     color: #dcdcdc;

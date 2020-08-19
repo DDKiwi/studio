@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import EventView from "./Pages/Events/View";
 import Home from "./Pages/Home";
@@ -7,7 +7,7 @@ import Work from "./Pages/Work";
 
 function App() {
   return (
-    <Router>
+    <Router basename='/'>
       <Switch>
         <Route exact path="/">
           <Home />

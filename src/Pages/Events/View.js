@@ -42,7 +42,7 @@ export default () => {
                 </picture>
               </p>
               <br />
-              <div class="footer">
+              <div className="footer">
                 <p>©2020</p>
               </div>
             </div>

@@ -193,7 +193,6 @@ template {
   display: none;
 }
 
-
 body {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -525,9 +524,13 @@ img {
 #log h1 {
   position: relative;
 }
+#log h1 a {
+  color: #00f;
+  text-decoration: none;
+}
 #log h1:after {
   content: "";
-  width: 140px;
+  width: 468px;
   background-color: #00f;
   height: 3px;
   position: absolute;

@@ -1,31 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import About from "./Pages/About"
-import Home from "./Pages/Home"
-import Work from "./Pages/Work"
-
-// const work = () => {
-//   const components = [A, B];
-//   const componentsToRender = components.map((Component, i) => (
-//     <Component key={i} testProp="testProp" />
-//   ));
-//   return <div>{componentsToRender}</div>;
-// };
+import EventView from "./Pages/Events/View";
+import Home from "./Pages/Home";
+import Work from "./Pages/Work";
 
 function App() {
   return (
     <Router>
-      <div id="home">
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/events/:id">
+          <EventView />
+        </Route>
+        <Route path="/work">
+          <Work />
+        </Route>
+      </Switch>
     </Router>
   );
 }

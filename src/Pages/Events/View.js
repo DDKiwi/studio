@@ -24,26 +24,23 @@ export default () => {
           <div id="article">
             <h3>{event.title}</h3>
             <div className="container">
-              <p lang="en-gb">
+              {/* <p lang="en-gb">
                 Ter­rit­ori­al branch of the Con­fed­er­a­tion of Itali­an
                 Co­oper­at­ives (Con­f­co­oper­at­ive), a na­tion­al
                 as­so­ci­ation rep­res­ent­ing, as­sist­ing, pro­tect­ing and
                 re­view­ing the co­oper­at­ive move­ment.
-              </p>
+              </p> */}
               <p lang="en-gb">
                 <picture>
                   <source media="(max-width: 767px)" srcSet={I202008} />
                   <source media="(min-width: 768px)" srcSet={I202008} />
                   <source media="(min-width: 1440px)" srcSet={I202008} />
-                  <img
-                    alt="Norma graphic design torino coop website 2"
-                    src={I202008}
-                  />
+                  <img alt="" src={I202008} />
                 </picture>
                 {/* <br />
                 <span className="caption">Where is my head?</span> */}
               </p>
-              <p lang="en-gb">
+              {/* <p lang="en-gb">
                 Each art­icle on this web­site usu­ally weighs less than 450KB,
                 which is even less than the av­er­age of pages 10 years ago. The
                 point is that this art­icle con­tains in­form­a­tion, be it
@@ -55,7 +52,7 @@ export default () => {
                   other CPU-​intensive scripts that won’t add any con­tent
                 </span>
                 , be­cause the weight of the choices isn’t just vir­tu­al.
-              </p>
+              </p> */}
               <br />
               {event.related && (
                 <div className="related">
@@ -64,9 +61,15 @@ export default () => {
                     {event.related.map((related, index) => {
                       return (
                         <li key={index}>
-                          <Link className="compass" to="/">
-                            {related.title}
-                          </Link>
+                          {related.target === "leave" ? (
+                            <a href={related.to} className="compass" rel="noopener noreferrer" target="_blank">
+                              {related.title}
+                            </a>
+                          ) : (
+                            <Link className="compass" to={related.to}>
+                              {related.title}
+                            </Link>
+                          )}
                         </li>
                       );
                     })}

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Events = {
   HMWBV5zy6g: {
     title: "Galleri 70",
-    related: [{ href: "https://galleri70.se/", title: "test", target : "leave" }],
+    related: [{ to: "https://galleri70.se/", title: "https://galleri70.se", target : "leave" }],
   },
 };
 

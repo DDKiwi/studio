@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 export const Events = {
   HMWBV5zy6g: {
     title: "Galleri 70",
+    related: [{ href: "https://galleri70.se/", title: "test", target : "leave" }],
   },
 };
 
 export default () => {
-
   return (
     <>
       <h3>— Events</h3>

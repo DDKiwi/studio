@@ -526,7 +526,7 @@ img {
 }
 #log h1 a {
   color: #00f;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 #log h1:after {
   content: "";
@@ -650,7 +650,7 @@ img {
     display: none;
   }
   #log h1:after {
-    width: 72px;
+    width: 233px;
     height: 1px;
     bottom: 0;
   }
@@ -1219,6 +1219,7 @@ img {
   #error h3 a,
   #error li a,
   #error p a,
+  #log h1 a,
   #home h1 a,
   #home h2 a,
   #home h3 a,

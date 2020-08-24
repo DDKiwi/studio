@@ -1,5 +1,4 @@
 import React from "react";
-import Page from "../../Components/Page";
 import Events from "../Events";
 
 export default () => {
@@ -8,16 +7,17 @@ export default () => {
       <div className="container">
         <h1>Daniel Violin Lönnesjö</h1>
         <br />
-        <h2>Artist, painting and sculpture</h2>
+        <h2>Exploration and construction of art.</h2> 
+        <h2>—{" "}Painting, drawing and sculpture.</h2>
         <br />
         <Events />
         <br />
         <br />
-        <p>©2020</p>
-        {/* <p lang="en-gb">
-        —{" "}
-        <a href="mailto:contact@dvlstudio.com">hello(at)lonnesjo(dot)com</a>
-      </p> */}
+        <p lang="en-gb">
+          I'm in Haverdal
+          <br />—{" "}
+          <a href="mailto:contact@dvlstudio.com">hello(at)lonnesjo(dot)com</a>
+        </p>
       </div>
     </div>
   );

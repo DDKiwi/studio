@@ -24,13 +24,9 @@ export default () => {
           <div id="article">
             <h3>{event.title}</h3>
             <div className="container">
-              {/* <p lang="en-gb">
-                Ter­rit­ori­al branch of the Con­fed­er­a­tion of Itali­an
-                Co­oper­at­ives (Con­f­co­oper­at­ive), a na­tion­al
-                as­so­ci­ation rep­res­ent­ing, as­sist­ing, pro­tect­ing and
-                re­view­ing the co­oper­at­ive move­ment.
-              </p> */}
-              <p lang="en-gb">
+              <p>{event.description}</p>
+              <p></p>
+              <p>
                 <picture>
                   <source media="(max-width: 767px)" srcSet={I202008} />
                   <source media="(min-width: 768px)" srcSet={I202008} />
@@ -40,7 +36,7 @@ export default () => {
                 {/* <br />
                 <span className="caption">Where is my head?</span> */}
               </p>
-              {/* <p lang="en-gb">
+              {/* <p>
                 Each art­icle on this web­site usu­ally weighs less than 450KB,
                 which is even less than the av­er­age of pages 10 years ago. The
                 point is that this art­icle con­tains in­form­a­tion, be it
@@ -51,7 +47,6 @@ export default () => {
                   avoid design­ing web­sites with heavy back­ground im­ages or
                   other CPU-​intensive scripts that won’t add any con­tent
                 </span>
-                , be­cause the weight of the choices isn’t just vir­tu­al.
               </p> */}
               <br />
               {event.related && (
@@ -62,7 +57,12 @@ export default () => {
                       return (
                         <li key={index}>
                           {related.target === "leave" ? (
-                            <a href={related.to} className="compass" rel="noopener noreferrer" target="_blank">
+                            <a
+                              href={related.to}
+                              className="compass"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
                               {related.title}
                             </a>
                           ) : (
@@ -77,7 +77,7 @@ export default () => {
                 </div>
               )}
               <div className="footer">
-                <p>©2020</p>
+                <p>©2020 Daniel Violin Lönnesjö</p>
               </div>
             </div>
           </div>
